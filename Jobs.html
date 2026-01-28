@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work For Us | Hot Beans Web</title>
+    <style>
+        /* Color Palette & Base Styles */
+        :root {
+            --bg-cream: #f9f5e9;
+            --navy-text: #0b1a2a;
+            --hot-bean-red: #8b0000;
+            --white: #ffffff;
+            --text-gray: #555;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-cream);
+            color: var(--navy-text);
+        }
+
+        /* Header Style Match */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: var(--white);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-btn {
+            background-color: var(--hot-bean-red);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: var(--hot-bean-red);
+        }
+
+        /* Job Grid */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 80px;
+        }
+
+        .job-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .job-card h3 {
+            margin-top: 0;
+            color: var(--navy-text);
+        }
+
+        .job-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid var(--navy-text);
+            color: var(--navy-text);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: var(--navy-text);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: var(--text-gray);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Hot Beans Web</div>
+        <nav>
+            <a href="#" class="contact-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: bold; color: var(--hot-bean-red); font-size: 0.8rem;">JOIN THE TEAM</p>
+        <h1>Build Your Future with <span>Hot Beans</span></h1>
+        <p>Select a role that matches your expertise and help us deliver digital excellence.</p>
+    </section>
+
+    <div class="container">
+        <div class="job-card">
+            <div>
+                <h3>Frontend Developer</h3>
+                <p>Crafting beautiful, responsive user interfaces using modern frameworks. You'll bring our creative designs to life with clean code.</p>
+            </div>
+            <a href="#" class="apply-btn">View Role</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>UX/UI Designer</h3>
+                <p>Designing intuitive user journeys and stunning visual layouts that align with our "Digital Solutions" philosophy.</p>
+            </div>
+            <a href="#" class="apply-btn">View Role</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Project Manager</h3>
+                <p>The bridge between our clients and developers. You ensure every digital solution is delivered on time and at high quality.</p>
+            </div>
+            <a href="#" class="apply-btn">View Role</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Backend Specialist</h3>
+                <p>Building the robust engines and databases that power our web applications. Focus on security, speed, and scalability.</p>
+            </div>
+            <a href="#" class="apply-btn">View Role</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Hot Beans Web. All rights reserved.
+    </footer>
+
+</body>
+</html>
