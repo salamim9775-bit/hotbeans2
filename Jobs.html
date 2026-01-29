@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Openings | Hot Beans Web</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream-bg': '#fcfaf7',      
+                        'primary-dark': '#612a20', 
+                        'accent-red': '#993427',   
+                        'card-white': '#ffffff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cream-bg font-sans min-h-screen">
+
+
+    <header class="bg-white border-b border-gray-100 py-6">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-extrabold text-primary-dark tracking-tighter uppercase">
+                Hot Beans Web
+            </div>
+            <nav class="space-x-6 text-sm font-bold text-gray-500 uppercase tracking-widest">
+                <a href="index.html" class="hover:text-primary-dark transition">Home</a>
+                <a href="Employees.html" class="text-primary-dark">Employees</a>
+                <a href="Contact Us.html" class="text-primary-dark">Contact Us</a>
+                <a href="Why Work For Us.html" class="text-primary-dark">Why Work For Us</a>
+
+            </nav>
+        </div>
+    </header>
+
+ 
+    <section class="py-16 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-primary-dark tracking-tight mb-4">
+                Current Openings
+            </h1>
+            <p class="text-lg text-primary-dark/70 font-medium">
+                Join our team and help us build the future of digital solutions.
+            </p>
+            <div class="mt-8 flex justify-center">
+                <div class="w-16 h-1.5 bg-accent-red rounded-full"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="max-w-4xl mx-auto px-6 pb-24">
+        <div class="space-y-4">
+            
+
+            <div class="bg-card-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between transition-all hover:shadow-md hover:border-accent-red/20">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-primary-dark tracking-tight">Senior Web Developer</h2>
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="bg-cream-bg text-primary-dark/80 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Full-Time</span>
+                        <span class="text-gray-400 text-sm italic">Remote / London, UK</span>
+                    </div>
+                </div>
+                <div>
+          
+                    <a href="Contact Us.html" class="inline-block bg-accent-red text-white font-bold px-10 py-3.5 rounded-xl uppercase tracking-widest text-sm hover:bg-red-900 transition-colors shadow-lg shadow-accent-red/20">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="bg-card-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between transition-all hover:shadow-md hover:border-accent-red/20">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-primary-dark tracking-tight">Junior UI/UX Designer</h2>
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="bg-cream-bg text-primary-dark/80 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Full-Time</span>
+                        <span class="text-gray-400 text-sm italic">Hybrid / Manchester, UK</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="Contact Us.html" class="inline-block bg-accent-red text-white font-bold px-10 py-3.5 rounded-xl uppercase tracking-widest text-sm hover:bg-red-900 transition-colors shadow-lg shadow-accent-red/20">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Job Card 3 -->
+            <div class="bg-card-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between transition-all hover:shadow-md hover:border-accent-red/20">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-primary-dark tracking-tight">Social Media Manager</h2>
+                    <div class="flex items-center space-x-3 mt-2">
+                        <span class="bg-cream-bg text-primary-dark/80 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Contract</span>
+                        <span class="text-gray-400 text-sm italic">Remote</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="Contact Us.html" class="inline-block bg-accent-red text-white font-bold px-10 py-3.5 rounded-xl uppercase tracking-widest text-sm hover:bg-red-900 transition-colors shadow-lg shadow-accent-red/20">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    
+        <div class="mt-16 text-center border-t border-primary-dark/10 pt-12">
+            <p class="text-primary-dark/60 font-medium">Don't see a perfect fit? Send your CV to</p>
+            <a href="mailto:careers@hotbeansweb.com" class="text-accent-red font-bold hover:underline mt-1 block tracking-wide">
+                careers@hotbeansweb.com
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-12 bg-white text-center">
+        <p class="text-xs font-bold text-primary-dark/40 uppercase tracking-widest">
+            &copy; 2025 Hot Beans Web. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
 
